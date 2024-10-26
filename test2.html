@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkiShop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="font-family: Arima, system-ui;">
+    <header class="flex justify-around items-center text-xl bg-red-700 h-20 text-white ">
+        <h1>SkiShop</h1>
+        
+        <ul class="flex w-1/3 justify-around ">
+            <li>
+                <a href="">Homme</a>
+            </li>
+            <li>
+                <a href="">Femme</a>
+            </li>
+            <li>
+                <a href="">Enfants</a>
+            </li>       
+            <li>                    
+                <a href="">Panier (0)</a>
+            </li>
+        </ul>
+    </header>
+    <div>
+        <section x-data="{ showContent: false }">
+            <div class="pt-12 pb-24 2xl:pb-44 bg-blueGray-100">
+              <div class="container px-4 mx-auto">
+                <ul class="flex flex-wrap items-center mb-10 xl:mb-0">
+                  <li class="mr-6">
+                    <a class="flex items-center text-sm font-medium text-gray-400 hover:text-gray-500" href="#">
+                      <span>Home</span>
+                      <svg class="ml-6" width="4" height="7" viewbox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.150291 0.898704C-0.0500975 0.692525 -0.0500975 0.359292 0.150291 0.154634C0.35068 -0.0507836 0.674443 -0.0523053 0.874831 0.154634L3.7386 3.12787C3.93899 3.33329 3.93899 3.66576 3.7386 3.8727L0.874832 6.84594C0.675191 7.05135 0.35068 7.05135 0.150292 6.84594C-0.0500972 6.63976 -0.0500972 6.30652 0.150292 6.10187L2.49888 3.49914L0.150291 0.898704Z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mr-6">
+                    <a class="flex items-center text-sm font-medium text-gray-400 hover:text-gray-500" href="#">
+                      <span>Store</span>
+                      <svg class="ml-6" width="4" height="7" viewbox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.150291 0.898704C-0.0500975 0.692525 -0.0500975 0.359292 0.150291 0.154634C0.35068 -0.0507836 0.674443 -0.0523053 0.874831 0.154634L3.7386 3.12787C3.93899 3.33329 3.93899 3.66576 3.7386 3.8727L0.874832 6.84594C0.675191 7.05135 0.35068 7.05135 0.150292 6.84594C-0.0500972 6.63976 -0.0500972 6.30652 0.150292 6.10187L2.49888 3.49914L0.150291 0.898704Z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li><a class="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#">New in</a></li>
+                </ul>
+                <div class="pb-9 text-center border-b border-black border-opacity-5">
+                  <div class="relative">
+                    <h2 class="mb-5 md:mb-0 text-9xl xl:text-10xl leading-normal font-heading font-medium text-center">New in</h2>
+                    <span class="md:absolute md:right-0 md:bottom-3 text-sm text-gray-400 font-medium">449 products found</span>
+                  </div>
+                </div>
+                <div class="mb-16 flex flex-wrap py-5 border-b border-black border-opacity-10">
+                  <div class="w-full sm:w-1/3 lg:w-1/5 py-2 sm:px-3">
+                    <a class="flex items-center py-5 px-8 xl:px-12 font-heading font-medium border border-gray-200 hover:border-gray-300 rounded-4xl" href="#">
+                      <span>Category</span>
+                      <svg class="relative top-px ml-6" width="8" height="5" viewbox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.97291 0.193232C7.20854 -0.0644107 7.58938 -0.0644107 7.82328 0.193232C8.05804 0.450875 8.05978 0.867141 7.82328 1.12478L4.42529 4.80677C4.19053 5.06441 3.81056 5.06441 3.57406 4.80677L0.176073 1.12478C-0.0586909 0.868102 -0.0586909 0.450875 0.176073 0.193232C0.411706 -0.0644107 0.792544 -0.0644107 1.02644 0.193232L4.00098 3.21284L6.97291 0.193232Z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="w-full sm:w-1/3 lg:w-1/5 py-2 sm:px-3">
+                    <a class="flex items-center py-5 px-8 xl:px-12 font-heading font-medium border border-gray-200 hover:border-gray-300 rounded-4xl" href="#">
+                      <span>Size</span>
+                      <svg class="relative top-px ml-6" width="8" height="5" viewbox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.97291 0.193232C7.20854 -0.0644107 7.58938 -0.0644107 7.82328 0.193232C8.05804 0.450875 8.05978 0.867141 7.82328 1.12478L4.42529 4.80677C4.19053 5.06441 3.81056 5.06441 3.57406 4.80677L0.176073 1.12478C-0.0586909 0.868102 -0.0586909 0.450875 0.176073 0.193232C0.411706 -0.0644107 0.792544 -0.0644107 1.02644 0.193232L4.00098 3.21284L6.97291 0.193232Z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="w-full sm:w-1/3 lg:w-1/5 py-2 sm:px-3">
+                    <a class="flex items-center py-5 px-8 xl:px-12 font-heading font-medium border border-gray-200 hover:border-gray-300 rounded-4xl" href="#">
+                      <span>Colors</span>
+                      <svg class="relative top-px ml-6" width="8" height="5" viewbox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.97291 0.193232C7.20854 -0.0644107 7.58938 -0.0644107 7.82328 0.193232C8.05804 0.450875 8.05978 0.867141 7.82328 1.12478L4.42529 4.80677C4.19053 5.06441 3.81056 5.06441 3.57406 4.80677L0.176073 1.12478C-0.0586909 0.868102 -0.0586909 0.450875 0.176073 0.193232C0.411706 -0.0644107 0.792544 -0.0644107 1.02644 0.193232L4.00098 3.21284L6.97291 0.193232Z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="w-full sm:w-1/3 lg:w-1/5 py-2 sm:px-3">
+                    <a class="flex items-center py-5 px-8 xl:px-12 font-heading font-medium border border-gray-200 hover:border-gray-300 rounded-4xl" href="#">
+                      <span>Price</span>
+                      <svg class="relative top-px ml-6" width="8" height="5" viewbox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.97291 0.193232C7.20854 -0.0644107 7.58938 -0.0644107 7.82328 0.193232C8.05804 0.450875 8.05978 0.867141 7.82328 1.12478L4.42529 4.80677C4.19053 5.06441 3.81056 5.06441 3.57406 4.80677L0.176073 1.12478C-0.0586909 0.868102 -0.0586909 0.450875 0.176073 0.193232C0.411706 -0.0644107 0.792544 -0.0644107 1.02644 0.193232L4.00098 3.21284L6.97291 0.193232Z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="w-full sm:w-1/3 lg:w-1/5 py-2 sm:px-3">
+                    <a class="flex items-center py-5 px-8 xl:px-12 font-heading font-medium border border-gray-200 hover:border-gray-300 rounded-4xl" href="#">
+                      <span>Brand</span>
+                      <svg class="relative top-px ml-6" width="8" height="5" viewbox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.97291 0.193232C7.20854 -0.0644107 7.58938 -0.0644107 7.82328 0.193232C8.05804 0.450875 8.05978 0.867141 7.82328 1.12478L4.42529 4.80677C4.19053 5.06441 3.81056 5.06441 3.57406 4.80677L0.176073 1.12478C-0.0586909 0.868102 -0.0586909 0.450875 0.176073 0.193232C0.411706 -0.0644107 0.792544 -0.0644107 1.02644 0.193232L4.00098 3.21284L6.97291 0.193232Z" fill="currentColor"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-20 md:mb-40">
+                  <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-24">
+                    <div class="xl:flex xl:items-center p-10 xl:py-32 mb-8 bg-white rounded-3xl">
+                      <a class="block mx-auto max-w-max" href="#">
+                        <img class="h-40 w-96 object-cover" src="https://www.chevignon.fr/phototheque/chevignon.com/2750/medium/01W002720A.jpg" alt="">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <p class="mb-4 text-xl leading-8 font-heading font-medium hover:underline text-center">Blousons</p>
+                    </a>
+                    <p class="text-xl text-blue-500 font-heading font-medium tracking-tighter text-center">
+                      <span class="text-base pr-2">$</span>
+                      <span>54.90</span>
+                    </p>
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-24">
+                    <div class="xl:flex xl:items-center p-10 xl:py-32 mb-8 bg-white rounded-3xl">
+                      <a class="block mx-auto max-w-max" href="#">
+                        <img class="h-40 w-96 object-cover" src="https://apostrophe-paris.com/cdn/shop/files/RNAM01PRECIEUX18_fd619f0e-49d6-4d36-aa8c-6764c3278f63.jpg?v=1726672355&width=1445" alt="">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <p class="mb-4 text-xl leading-8 font-heading font-medium hover:underline text-center">Pulls</p>
+                    </a>
+                    <p class="text-xl text-blue-500 font-heading font-medium tracking-tighter text-center">
+                      <span class="text-base pr-2">$</span>
+                      <span>44.90</span>
+                    </p>
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-24">
+                    <div class="xl:flex xl:items-center p-10 xl:py-32 mb-8 bg-white rounded-3xl">
+                      <a class="block mx-auto max-w-max" href="#">
+                        <img class="h-40 w-96 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMsqXhMIAwrILmnIIokRguqtmFnGPvWcHUlQ&s" alt="">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <p class="mb-4 text-xl leading-8 font-heading font-medium hover:underline text-center">Pantalons</p>
+                    </a>
+                    <p class="text-xl text-blue-500 font-heading font-medium tracking-tighter text-center">
+                      <span class="text-base pr-2">$</span>
+                      <span>55.59</span>
+                    </p>
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-24">
+                    <div class="xl:flex xl:items-center p-10 xl:py-32 mb-8 bg-white rounded-3xl">
+                      <a class="block mx-auto max-w-max" href="#">
+                        <img class="h-40 w-96 object-cover" src="https://celio.tn/media/catalog/product/cache/dd9d425ebb6d2ec92fb4ce41e2a39a01/d/o/doudoune-light-sans-manches-d-perlante-noir-1085382-1-product_1_7.jpg" alt="">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <p class="mb-4 text-xl leading-8 font-heading font-medium hover:underline">Sans manches</p>
+                    </a>
+                    <p class="text-xl text-blue-500 font-heading font-medium tracking-tighter text-center">
+                      <span class="text-base pr-2">$</span>
+                      <span>49.90</span>
+                    </p>
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-24">
+                    <div class="xl:flex xl:items-center p-10 xl:py-32 mb-8 bg-white rounded-3xl">
+                      <a class="block mx-auto max-w-max" href="#">
+                        <img class="h-40 w-96 object-cover" src="https://www.cdiscount.com/pdt2/6/0/7/2/700x700/mp53148607/rw/costume-homme-mariage-3-pieces-slim-fit-vetement-f.jpg" alt="">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <p class="mb-4 text-xl leading-8 font-heading font-medium hover:underline text-center">Costumes</p>
+                    </a>
+                    <p class="text-xl text-blue-500 font-heading font-medium tracking-tighter text-center">
+                      <span class="text-base pr-2">$</span>
+                      <span>150.90</span>
+                    </p>
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-24">
+                    <div class="xl:flex xl:items-center p-10 xl:py-32 mb-8 bg-white rounded-3xl">
+                      <a class="block mx-auto max-w-max" href="#">
+                        <img class="h-40 object-cover" src="https://pics21.modz.fr/pictures/2024/03-mars/8043801/modele3/vestesimilicuir-femme-noir-zara-8043801_003.jpg" alt="">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <p class="mb-4 text-xl leading-8 font-heading font-medium hover:underline text-center">Cuir</p>
+                    </a>
+                    <p class="text-xl text-blue-500 font-heading font-medium tracking-tighter text-center">
+                      <span class="text-base pr-2">$</span>
+                      <span>88.90</span>
+                    </p>
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-24">
+                    <div class="xl:flex xl:items-center p-10 xl:py-32 mb-8 bg-white rounded-3xl">
+                      <a class="block mx-auto max-w-max" href="#">
+                        <img class="h-40  object-cover" src="https://celio.tn/media/catalog/product/cache/dd9d425ebb6d2ec92fb4ce41e2a39a01/c/h/chemise-regular-en-lin-et-coton-bleu-1108228-1-product_1_5.jpg" alt="">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <p class="mb-4 text-xl leading-8 font-heading font-medium hover:underline text-center">Chemises</p>
+                    </a>
+                    <p class="text-xl text-blue-500 font-heading font-medium tracking-tighter text-center">
+                      <span class="text-base pr-2">$</span>
+                      <span>42.90</span>
+                    </p>
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-24">
+                    <div class="xl:flex xl:items-center p-10 xl:py-32 mb-8 bg-white rounded-3xl">
+                      <a class="block mx-auto max-w-max" href="#">
+                        <img class="h-40 w-96 object-cover" src="https://lookhomme.com/wp-content/uploads/2020/04/Chaussure-homme-classique-11.jpg" alt="">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <p class="mb-4 text-xl leading-8 font-heading font-medium hover:underline text-center">Chaussures</p>
+                    </a>
+                    <p class="text-xl text-blue-500 font-heading font-medium tracking-tighter text-center">
+                      <span class="text-base pr-2">$</span>
+                      <span>75.90</span>
+                    </p>
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-24 xl:mb-0">
+                    <div class="xl:flex xl:items-center p-10 xl:py-32 mb-8 bg-white rounded-3xl">
+                      <a class="block mx-auto max-w-max" href="#">
+                        <img class="h-40 w-96 object-cover" src="https://cdn.shopify.com/s/files/1/0600/9638/0981/files/BALLY_MLE04F_PE001_U901_01.jpg?v=1719614174" alt="">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <p class="mb-4 text-xl leading-8 font-heading font-medium hover:underline text-center">Doudoune</p>
+                    </a>
+                    <p class="text-xl text-blue-500 font-heading font-medium tracking-tighter text-center">
+                      <span class="text-base pr-2">$</span>
+                      <span>99.90</span>
+                    </p>
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-24 lg:mb-0">
+                    <div class="xl:flex xl:items-center p-10 xl:py-32 mb-8 bg-white rounded-3xl">
+                      <a class="block mx-auto max-w-max" href="#">
+                        <img class="h-40 w-96 object-cover" src="https://s.alicdn.com/@sc04/kf/S2a315a563cbb42c8b1141d60a9dc7ad8M.jpg_300x300.jpg" alt="">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <p class="mb-4 text-xl leading-8 font-heading font-medium hover:underline text-center">sweats|hoodies</p>
+                    </a>
+                    <p class="text-xl text-blue-500 font-heading font-medium tracking-tighter text-center">
+                      <span class="text-base pr-2">$</span>
+                      <span>60.90</span>
+                    </p>
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-24 sm:mb-0">
+                    <div class="xl:flex xl:items-center p-10 xl:py-32 mb-8 bg-white rounded-3xl">
+                      <a class="block mx-auto max-w-max" href="#">
+                        <img class="h-40 w-full object-cover mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ09G_YeVMesyqNWuo_tJ2fMbw9bedYc8eYCaGGc772bdCMYy74REpHATinRKrXxKhzo9Q&usqp=CAU" alt="">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <p class="mb-4 text-xl leading-8 font-heading font-medium hover:underline text-center">joggings</p>
+                    </a> 
+                    <p class="text-xl text-blue-500 font-heading font-medium tracking-tighter text-center">
+                      <span class="text-base pr-2">$</span>
+                      <span>39.59</span>
+                    </p>
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-3 mb-24">
+                    <div class="xl:flex xl:items-center p-10 xl:py-32 mb-8 bg-white rounded-3xl">
+                      <a class="block mx-auto max-w-max" href="#">
+                        <img class="h-40 object-cover" src="https://moondo.tn/156359-large_default/eau-de-parfum-homme-givenchy-reserve-privee.jpg" alt="">
+                      </a>
+                    </div>
+                    <a href="#">
+                      <p class="mb-4 text-xl leading-8 font-heading font-medium hover:underline text-center">Parfums</p>
+                    </a>
+                    <p class="text-xl text-blue-500 font-heading font-medium tracking-tighter text-center">
+                      <span class="text-base pr-2">$</span>
+                      <span>74.90</span>
+                    </p>
+                  </div>
+                  
+                  
+                
+                <div class="sm:mx-auto sm:w-96"><a x-on:click.prevent="showContent = true" x-show="!showContent" class="block py-5 px-10 w-full text-xl leading-6 text-white font-medium tracking-tighter font-heading text-center bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl" href="#">More products</a></div>
+              </div>
+            </div>
+         </div>
+          </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
